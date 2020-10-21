@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/fonn"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:background="#106170"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/result_text_High_Score"
+            android:text="Счёт: "
+            android:textSize="40sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/result_total_Ques"
+            android:text="Вопросы: "
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/result_Correct_Ques"
+            android:text="Верно: "
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/result_Wrong_Ques"
+            android:text="Неверно: "
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/result_bt_playAgain"
+                android:text="Ещё раз"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:background="@drawable/button_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/result_bt_mainmenu"
+                android:text="Меню"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="10dp"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:background="@drawable/button_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
